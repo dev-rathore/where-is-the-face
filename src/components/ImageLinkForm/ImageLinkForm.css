@@ -1,0 +1,30 @@
+.form {
+  display: grid;
+  grid-template-columns: minmax(250px, 400px) minmax(80px, 100px);
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: #07558a;
+}
+.btn-border {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.input-border {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .form {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .btn-border {
+    border-radius: 3px;
+  }
+  .input-border {
+    border-radius: 3px;
+  }
+}

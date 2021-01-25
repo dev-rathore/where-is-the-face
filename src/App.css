@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+.app-font{
+  font-family: 'Lobster Two', cursive;
+}
+.para-font{
+  font-family: 'Arsenal', sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid2 {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}
